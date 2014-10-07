@@ -81,5 +81,5 @@ SurveyRabbitView.prototype.renderPreview = function () {
 	});
 
 	$('.form-horizontal').children().remove();
-	$('.form-horizontal').append(previewSurvey);
+	$('.form-horizontal').append(surveytitle + previewSurvey);
 };
