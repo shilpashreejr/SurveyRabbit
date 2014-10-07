@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>Survey Rabbit</title>
+	<link href="src/css/surveyRabbit.css" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Composer</h1>
+		</header>
+		<div class="sr-contentWrapper">
+			<aside>
+				<article>
+					<hgroup>
+						<h3>Widgets</h3>
+					</hgroup>
+					<div id="sr-widgetContainer"></div>
+				</article>
+
+			</aside>
+
+			<section>
+				<form class="form-horizontal" role="form">
+					<div id="sr-title">
+						<label for="sr-surveryTitle" class="col-sm-2 control-label">Survey Title</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="sr-surveryTitle">
+						</div>
+						<button class="btn btn-primary active" id="sr-previewButton">Preview</button>
+					</div>
+					<!-- RADIO BUTTON and CHECKBOX starts here -->
+					<div id="sr-surveyQuestionContainer"></div>
+				</form>
+			</section>
+		</div>
+	</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="src/js/surveyRabbitController.js"></script>
+<script src="src/js/surveyRabbitModel.js"></script>
+<script src="src/js/surveyRabbitView.js"></script>
+<script src="src/js/surveyRabbitMain.js"> </script>
+</html>

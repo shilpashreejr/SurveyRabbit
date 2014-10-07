@@ -1,0 +1,68 @@
+/*general style*/
+    html, body 
+    { 
+        margin:0; 
+        padding:0; 
+        height:100%;
+    }
+    header, section, article, aside
+    {
+        display: block;
+    }
+/*header area*/
+    header 
+    {
+        position: absolute;
+        height: 100px; 
+        background: #ff0055; 
+        width: 100%;  
+    }
+    h1 
+    {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+/*section area*/
+    section 
+    { 
+        /*position: absolute; */
+        min-height: 605px;
+        width:85%; 
+        background: #CCC; 
+        margin-top: 100px; 
+        padding-bottom: 60px;
+        float: right;
+    }
+    hgroup h2 
+    {
+        color: #000; 
+        padding: 10px 0 0 10px;
+    }
+    article 
+    {
+        width:auto; 
+        background: #CCC;
+    }
+/*aside area*/
+    aside 
+    {
+        width:15%; 
+        min-height: 605px; 
+        background: #666; 
+        float:left; 
+        margin-top: 100px;
+        right:0px;
+        padding-bottom: 60px;
+    }
+    hgroup h3 
+    {
+        color: #fff; 
+        padding: 10px 0 0 10px;
+    }
+    aside article 
+    {
+        width:auto; 
+        background: #666; 
+        color:#FFF
+    }
