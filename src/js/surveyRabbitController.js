@@ -9,10 +9,12 @@ var SurveyRabbitController = function () {
 	return this;
 };
 
+/* Render the widget by calling the render from the View */
 SurveyRabbitController.prototype.loadView = function () {
 	this.view.renderWidgets();
 };
 
+/* All the events are binded in this section */
 SurveyRabbitController.prototype.bindEvents = function () {
 	var type,
 		index,

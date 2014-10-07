@@ -11,6 +11,7 @@ var SurveyRabbitView = function (model) {
 		return this;
 	},
 
+	/* This function renders the radio button and checkbox with option in the preview mode */
 	_renderPreview = function (value) {
 		var previewSurveyQuestion = '<fieldset><legend>' + value.question + '</legend>',
 			previewSurveyOptions = [];
@@ -25,6 +26,7 @@ var SurveyRabbitView = function (model) {
 		return (previewSurveyQuestion + previewSurveyOptions + '</fieldset>');
 	};
 
+/* Renders the allowed Widgets */
 SurveyRabbitView.prototype.renderWidgets = function () {
 	var allWidgets = [];
 
@@ -39,6 +41,7 @@ SurveyRabbitView.prototype.renderWidgets = function () {
 	$('#sr-widgetContainer').append(allWidgets);
 };
 
+/* The Survey Question and answer along with the type is rendered here */
 SurveyRabbitView.prototype.renderSurvey = function (type) {
 	var allSurvey,
 		typeCamelCase = (type === 'radio') ? RADIO : CHECKBOX;
@@ -65,10 +68,12 @@ SurveyRabbitView.prototype.renderSurvey = function (type) {
 	counter++;
 };
 
+/* When the widget is deleted , this function takes care of removing it from DOM */
 SurveyRabbitView.prototype.removeSurveyQuestion = function ($this) {
 	$this.parentsUntil('#sr-surveyQuestionContainer').remove();
 };
 
+/* Preview mode is rendered in the below function */
 SurveyRabbitView.prototype.renderPreview = function () {
 
 	var surveytitle = '<h2>' + this.model.surveyTitle + '</h2>',
